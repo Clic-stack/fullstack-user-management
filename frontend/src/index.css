@@ -1,0 +1,63 @@
+:root {
+  font-family: 'Space Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --accent: #F43F5E; 
+  --gradient-start: #6366F1; 
+  --gradient-end: #22D3EE; 
+  --text-light: #f4f4f4
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button:not(.pagination button) {
+  border-radius: 8px;
+  padding: 0.8em 2em;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--gradient-start), var(--accent));
+  color: var(--text-light);
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+button:hover:not(.pagination button:hover, .close-btn:hover) {
+  border-color: #646cff;
+  transform: scale(1.05);
+  background: linear-gradient(90deg, var(--accent), var(--gradient-end));
+}

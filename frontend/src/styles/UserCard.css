@@ -1,0 +1,23 @@
+.card {
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  border: 2px solid var(--gradient-start);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 300px;
+  width: 100%;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  border-color: var(--accent);
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.card {
+  animation: fadeInUp 0.6s ease-out;
+}

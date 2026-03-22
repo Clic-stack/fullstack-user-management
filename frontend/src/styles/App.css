@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px 50px;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.errors {
+  color: var(--accent);
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+.message {
+  color: var(--gradient-end);
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+@media (max-width: 768px) {
+  .message {
+    font-size: 1.5em;
+    margin-top: 15vh;
+    padding: 1em;
+  }
+
+  .errors {
+    font-size: 1.5em;
+    margin-top: 15vh;
+  }
+}
+

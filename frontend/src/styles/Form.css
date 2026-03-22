@@ -1,0 +1,87 @@
+.form {
+    background: linear-gradient(135deg, #111, #1a1a1a);
+    padding: 1rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 300px;
+    width: 100%;
+    animation: fadeInForm 0.6s ease-out;
+}
+
+@keyframes fadeInForm {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-floating {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    background-color: #222222;
+    color: #f4f4f4;
+    border: 2px solid transparent;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border: 2px solid #F43F5E;
+    background-color: #2c2c2c;
+}
+
+.form-floating p {
+    color: #F43F5E;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    font-style: italic;
+}
+
+input[type="date"] {
+  padding-right: 2.5rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.8;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.btn-dark, .btn-warning {
+    background: linear-gradient(to right, #6366F1, #F43F5E);
+    color: #fff;
+    font-weight: bold;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-dark:hover, .btn-warning:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    background: linear-gradient(90deg, var(--accent), var(--gradient-end));
+}
+
+.btn-light {
+    background-color: #2f2f2f;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.7rem;
+    margin-left: 1rem;
+}
+

@@ -1,0 +1,158 @@
+body {
+  overflow-x: hidden;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: unset;
+  padding: 40px 16px;
+  background-color: var(--base-color); 
+}
+
+.loading-box {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 18px 20px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  border-radius: 2rem;
+  background: linear-gradient(120deg, #2121978f, #5e0a1879, #2121978f);
+  background-size: 200% 200%;
+  animation: pulseBackground 6s ease-in-out infinite, boxEnter 0.8s ease-out forwards;
+  transform-origin: center;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 16px;
+  margin: 0 auto;
+  width: fit-content;
+  max-width: 1000px;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.blur-card {
+  flex: 0 0 auto;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: slideIn 0.6s ease-out forwards;
+  animation-delay: calc(0.2s * var(--i));
+  background-color: #1a1a1a;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 240px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.blurred-info {
+  width: 100%;
+  height: 80px;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+}
+
+.loading-message {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f3eced;
+  font-style: italic;
+}
+
+@keyframes pulseBackground {
+  0% {
+    background-position: 0% 50%;
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  50% {
+    background-position: 100% 50%;
+    transform: scale(1.02);
+    opacity: 1;
+  }
+  100% {
+    background-position: 0% 50%;
+    transform: scale(1);
+    opacity: 0.95;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes boxEnter {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .loading-box {
+    width: 90%;
+    padding: 16px 12px;
+    gap: 20px;
+    border-radius: 1.2rem;
+  }
+
+  .carousel {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+    gap: 12px;
+    padding: 8px 12px;
+  }
+
+  .blur-card {
+    min-width: 160px;
+    max-width: 180px;
+    width: 180px;
+    padding: 0.8rem;
+  }
+
+  .avatar-img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0.6rem;
+  }
+
+  .blurred-info {
+    height: 60px;
+  }
+
+  .loading-message {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+

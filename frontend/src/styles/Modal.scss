@@ -1,0 +1,73 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+    backdrop-filter: blur(8px);
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    place-content: center;
+
+    &-content {
+        position: relative;
+        background: linear-gradient(135deg, #111, #1f1f1f);
+        border: 2px solid #F43F5E;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+        transform: translateY(20px);
+        animation: fadeInModal 0.5s ease-out forwards;
+        min-width: 300px;
+        max-width: 600px;
+
+        & button {
+            margin-top: 20px;
+            padding: 0.6rem 1.2rem;
+            margin-left: 15px;
+            justify-items: center;
+            background: linear-gradient(to right, #6366F1, #F43F5E);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+            }
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: -0.75rem;
+            right: 0.55rem;
+            padding: 0.5em 1.6em;
+            background: transparent;
+            color: var(--accent, #F43F5E);
+            font-size: 1.15rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.2);
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: translateY(30px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
