@@ -279,7 +279,7 @@ Located in the `/backend` folder, this server manages business logic and data in
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/Clic-stack/fullstack-user-management.git]
+git clone https://github.com/Clic-stack/fullstack-user-management.git
 cd fullstack-user-management
 ```
 
@@ -607,7 +607,7 @@ Experiencia de Usuario (UX): Crear un diseño 100% responsivo con SCSS que propo
 
 ### 1. Clonar el repositorio
 ```bash
-git clone [https://github.com/Clic-stack/fullstack-user-management.git]
+git clone https://github.com/Clic-stack/fullstack-user-management.git
 cd fullstack-user-management
 ```
 
