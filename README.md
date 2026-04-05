@@ -1,12 +1,13 @@
-# 👥 Full-Stack User Management System: From Prototype to Professional Infrastructure
+# <p align="center">👥 Full-Stack User Management System
 
 This repository represents the technical evolution of a user management system, transitioning from a local development environment (simulated with **JSON Server**) to a professional decoupled architecture with **real persistence in PostgreSQL**.
 
 <img width="1172" height="962" alt="image" src="https://github.com/user-attachments/assets/c2b9b0d4-3c0b-4650-bfa6-daf49ccb5ce7" />
 
 ---
+</p>
 
-📊 Entity Relationship Diagram (ERD)
+## 📊 Entity Relationship Diagram (ERD)
 
 ``` mermaid
 erDiagram
@@ -20,6 +21,16 @@ erDiagram
         string image_url
     }
 ```
+---
+
+## 🔗 Project Links
+
+**🚀 Live Demo:** https://usercrud-fullstack.netlify.app
+
+**⚙️ API Server:** https://users-crud-api-gikf.onrender.com/api/users
+
+**📄 Postman Documentation:** https://documenter.getpostman.com/view/48309056/2sB3WtsJn4
+
 
 ---
 
@@ -55,12 +66,16 @@ Located in the `/backend` folder, this server manages business logic and data in
 
 ## 🧪 Technologies Used
 
+<div align="center"> 
+    
 | Area | Tools |
 | :--- | :--- |
 | **Frontend** | React, Vite, Axios, Zod, React Hook Form, SCSS |
 | **Backend** | Node.js, Express, Sequelize, PostgreSQL |
 | **Tools** | Git, Postman, Dotenv, ESLint |
 | **Deployment** | Render (API), Netlify (Frontend) |
+
+</div>
 
 ---
 
@@ -85,18 +100,18 @@ Located in the `/backend` folder, this server manages business logic and data in
 
 ## 🛠️ Reinforced Technical Skills
 
-#### 1. Backend Development & Data Engineering
+## 1. Backend Development & Data Engineering
 * **RESTful API Design:** Creating scalable services with Node.js and Express, correctly handling HTTP methods and status codes.
 * **Relational Database Management:** Implementing solid persistence with PostgreSQL, moving from simple JSON models to professional SQL structures.
 * **ORM Management (Sequelize):** Entity modeling, data type definition, and asynchronous query execution for record manipulation.
 * **Environment Security:** Configuring sensitive variables with Dotenv to prevent database credentials from being exposed in version control.
 
-#### 2. Frontend Development & App Logic
+## 2. Frontend Development & App Logic
 * **React Component Architecture:** Building modular interfaces using Vite, optimizing rendering and code reuse via the `children` prop.
 * **State & Effect Management:** Mastering fundamental hooks (`useState`, `useEffect`) for data synchronization between the UI and server.
 * **Data Validation:** Implementing a declarative validation layer ensuring data accuracy before being sent to PostgreSQL.
 
-#### 3. Architecture & DevOps
+## 3. Architecture & DevOps
 * **Monorepo Management:** Professional file organization separating Frontend and Backend in a single controlled repository.
 * **Deployment Strategies:** Configuration and production setup on Render (Backend) and Netlify (Frontend).
 * **Software Documentation:** Using Postman to document endpoints for developers and data analysts.
@@ -106,6 +121,8 @@ Located in the `/backend` folder, this server manages business logic and data in
 <details>
 <summary><b>📁 API Endpoints (Backend)</b></summary>
 
+<div align="center"> 
+
 | Method | Endpoint        | Action  |
 |--------|-----------------|---------|
 | GET    | `/users`        | Get all users |
@@ -114,12 +131,16 @@ Located in the `/backend` folder, this server manages business logic and data in
 | PUT    | `/users/:id`    | Update one user by ID |
 | DELETE | `/users/:id`    | Delete one user by ID |
 
+</div>
+
 </details>
 
 ---
 
 <details>
 <summary><b>🧠 User Model (Backend)</b></summary>
+
+<div align="center"> 
 
 | Field       | Type     | Example              |
 |-------------|----------|----------------------|
@@ -131,6 +152,8 @@ Located in the `/backend` folder, this server manages business logic and data in
 | birthday    | Date     | 03/05/1992           |
 | image_url   | String   | "https://ui-avatars.com/api/?name=Jesus+Fernandez" |
 
+</div>
+
 </details>
 
 ---
@@ -138,12 +161,16 @@ Located in the `/backend` folder, this server manages business logic and data in
 <details>
 <summary><b>⚡ External APIs & Features (Frontend)</b></summary>
 
+<div align="center"> 
+
 | Tech / API                    | Functionality |
 |-------------------------------|---------------------------|
 | **JSON Server**               | Simulated RESTful API (Initial prototyping phase). |
 | **Custom Hook(useUsersCrud)** | Encapsulates HTTP request logic. |
 | **Custom Hook(usePagination)**| Encapsulates pagination logic for user listing. |
 | **Custom Hook(useModal)**     | Encapsulates modal functionality logic. |
+
+</div>
 
 </details>
 
@@ -297,16 +324,6 @@ cd ../frontend
 npm install
 # Create a `.env` file based on `.env.example` with your API URL.
 ```
-
----
-
-🔗 Project Links
-**🚀 Live Demo:**https://usercrud-fullstack.netlify.app
-
-**⚙️ API Server:**https://users-crud-api-gikf.onrender.com/api/users
-
-**📄 Postman Documentation:**https://documenter.getpostman.com/view/48309056/2sB3WtsJn4
-
 ---
 
 ## 🎨 Author
@@ -314,15 +331,16 @@ Clio Salgado – Full-Stack Developer & Data Science for Business Student. This 
 
 🔽 **Versión en Español** 🔽
 
-# 👥 Full-Stack User Management System: De Prototipo a Infraestructura Profesional
+# <p align="center">👥 Full-Stack User Management System
 
 Este repositorio representa la evolución técnica de un sistema de gestión de usuarios, transitando de un entorno de desarrollo local (simulado con **JSON Server**) hacia una arquitectura desacoplada profesional con **persistencia real en PostgreSQL**.
 
 <img width="1172" height="962" alt="image" src="https://github.com/user-attachments/assets/3c059985-12f5-4b4c-b37d-b15beba50fa1" />
 
 ---
+</p>
 
-📊 Entity Relationship Diagram (ERD)
+## 📊 Entity Relationship Diagram (ERD)
 
 ``` mermaid
 erDiagram
@@ -336,6 +354,15 @@ erDiagram
         string image_url
     }
 ```
+---
+
+## 🔗 Enlaces del Proyecto
+**🚀 App en vivo:** https://usercrud-fullstack.netlify.app
+
+**⚙️ API Server:** https://users-crud-api-gikf.onrender.com/api/users
+
+**📄 Documentación Postman:** https://documenter.getpostman.com/view/48309056/2sB3WtsJn4
+
 ---
 
 ## 🚀 La Historia del Proyecto (Evolución Técnica)
@@ -370,6 +397,8 @@ Ubicado en la carpeta `/backend`, este servidor gestiona la lógica de negocio y
 
 ## 🧪 Tecnologías Usadas
 
+<div align="center"> 
+
 | Área | Herramientas |
 | :--- | :--- |
 | **Frontend** | React, Vite, Axios, Zod, React Hook Form, SCSS |
@@ -377,62 +406,58 @@ Ubicado en la carpeta `/backend`, este servidor gestiona la lógica de negocio y
 | **Tools** | Git, Postman, Dotenv, ESLint |
 | **Deployment** | Render (API), Netlify (Frontend) |
 
+</div>
+
 ---
 
 ## 🎯 Objetivos del Proyecto
 1. Persistencia y Gestión de Datos (Foco Principal)
-Migración a PostgreSQL: Evolucionar de un almacenamiento volátil y limitado (JSON Server) a una base de datos relacional robusta (PostgreSQL), garantizando la integridad, seguridad y permanencia de la información.
-
-Modelado con Sequelize (ORM): Implementar esquemas de datos eficientes para la entidad "Usuario", asegurando validaciones a nivel de base de datos y optimizando las consultas (Queries) para entornos de producción.
-
-Arquitectura de Datos para Negocios: Diseñar una estructura de tablas escalable que permita el manejo masivo de registros, demostrando la capacidad de gestionar el ciclo de vida del dato desde su origen hasta su persistencia.
+   
+* Migración a PostgreSQL: Evolucionar de un almacenamiento volátil y limitado (JSON Server) a una base de datos relacional robusta (PostgreSQL), garantizando la integridad, seguridad y permanencia de la información.
+* Modelado con Sequelize (ORM): Implementar esquemas de datos eficientes para la entidad "Usuario", asegurando validaciones a nivel de base de datos y optimizando las consultas (Queries) para entornos de producción.
+* Arquitectura de Datos para Negocios: Diseñar una estructura de tablas escalable que permita el manejo masivo de registros, demostrando la capacidad de gestionar el ciclo de vida del dato desde su origen hasta su persistencia.
 
 2. Desarrollo de API y Lógica de Servidor
-Arquitectura Desacoplada: Construir un sistema donde el Frontend (React) y el Backend (Node.js) operen de forma independiente pero perfectamente sincronizada a través de una API RESTful propia.
-
-Seguridad y Entorno: Gestionar variables sensibles mediante Dotenv y asegurar procesos de despliegue listos para la nube (Render).
-
-Estandarización: Documentar el sistema mediante Postman, facilitando la interoperabilidad y el consumo de datos por parte de otros servicios.
+   
+* Arquitectura Desacoplada: Construir un sistema donde el Frontend (React) y el Backend (Node.js) operen de forma independiente pero perfectamente sincronizada a través de una API RESTful propia.
+* Seguridad y Entorno: Gestionar variables sensibles mediante Dotenv y asegurar procesos de despliegue listos para la nube (Render).
+* Estandarización: Documentar el sistema mediante Postman, facilitando la interoperabilidad y el consumo de datos por parte de otros servicios.
 
 3. Frontend de Alto Rendimiento y UX
-Validación de Datos en el Cliente: Utilizar Zod y React Hook Form para garantizar que la información sea íntegra antes de ser procesada por la API, reduciendo la carga en el servidor.
-
-Componentización y Escalabilidad: Desarrollar una interfaz modular mediante Custom Hooks (useUsersCrud, usePagination) y componentes reutilizables con la propiedad children.
-
-Experiencia de Usuario (UX): Crear un diseño 100% responsivo con SCSS que proporcione retroalimentación visual inmediata a través de estados de carga y modales.
+   
+* Validación de Datos en el Cliente: Utilizar Zod y React Hook Form para garantizar que la información sea íntegra antes de ser procesada por la API, reduciendo la carga en el servidor.
+* Componentización y Escalabilidad: Desarrollar una interfaz modular mediante Custom Hooks (useUsersCrud, usePagination) y componentes reutilizables con la propiedad children.
+* Experiencia de Usuario (UX): Crear un diseño 100% responsivo con SCSS que proporcione retroalimentación visual inmediata a través de estados de carga y modales.
 
 ---
 
 🛠️ Habilidades Técnicas Reforzadas
 1. Desarrollo Backend e Ingeniería de Datos
+   
 * Diseño de APIs RESTful: Creación de servicios escalables con Node.js y Express, manejando correctamente los métodos HTTP y códigos de estado.
-
 * Gestión de Bases de Datos Relacionales: Implementación de persistencia sólida mediante PostgreSQL, pasando de modelos simples (JSON) a estructuras SQL profesionales.
-
 * Manejo de ORM (Sequelize): Modelado de entidades, definición de tipos de datos y ejecución de consultas (Queries) asíncronas para la manipulación de registros.
-
 * Seguridad de Entorno: Configuración de variables sensibles con Dotenv, asegurando que las credenciales de la base de datos nunca se expongan en el control de versiones.
 
 2. Desarrollo Frontend y Lógica de Aplicación
+   
 * Arquitectura de Componentes en React: Construcción de interfaces modulares utilizando Vite, optimizando el renderizado y la reutilización de código mediante la propiedad children.
-
 * Gestión de Estado y Efectos: Dominio de hooks fundamentales (useState, useEffect) para la sincronización de datos entre la UI y el servidor.
-
 * Validación de Datos (Zod & React Hook Form): Implementación de una capa de validación declarativa que asegura que la información sea correcta antes de ser enviada a PostgreSQL.
-
 * Consumo de APIs con Axios: Manejo de peticiones asíncronas, interceptación de errores y retroalimentación visual al usuario.
 
 3. Arquitectura y DevOps
+   
 * Gestión de Monorepos: Organización profesional de archivos separando Frontend y Backend en un solo repositorio controlado.
-
 * Estrategias de Despliegue: Configuración y puesta en producción de servicios en Render (Backend) y Netlify (Frontend), incluyendo el manejo de builds.
-
 * Documentación de Software: Uso de Postman para documentar endpoints, permitiendo que otros desarrolladores o analistas de datos entiendan la estructura de la API.
 
 ---
 
 <details>
 <summary><b>📁 Endpoints de la API (Backend)</b></summary>
+
+<div align="center"> 
 
 | Método | Endpoint        | Función |
 |--------|-----------------|---------|
@@ -442,12 +467,16 @@ Experiencia de Usuario (UX): Crear un diseño 100% responsivo con SCSS que propo
 | PUT    | `/users/:id`    | Actualizar un usuario por ID |
 | DELETE | `/users/:id`    | Eliminar un usuario por ID |
 
+</div>
+
 </details>
 
 ---
 
 <details>
 <summary><b>🧠 Modelo de Usuario (Backend)</b></summary>
+
+<div align="center"> 
 
 | Campo       | Tipo     | Ejemplo              |
 |-------------|----------|----------------------|
@@ -459,6 +488,8 @@ Experiencia de Usuario (UX): Crear un diseño 100% responsivo con SCSS que propo
 | birthday    | Date     | 03/05/1992           |
 | image_url   | String   | "https://ui-avatars.com/api/?name=Jesus+Fernandez" |
 
+</div>
+
 </details>
 
 ---
@@ -466,12 +497,16 @@ Experiencia de Usuario (UX): Crear un diseño 100% responsivo con SCSS que propo
 <details>
 <summary><b>⚡ APIs y funcionalidades externas (Frontend)</b></summary>
 
+<div align="center"> 
+
 | Tecnología / API              | Funcionalidad |
 |-------------------------------|---------------------------|
 | **JSON Server**               | Simulación de API RESTful para usuarios. |
 | **Custom Hook(useUsersCrud)** | Encapsula lógica de peticiones HTTP. |
 | **Custom Hook(usePagination)**| Encapsula lógica para la paginación en los usuarios. |
 | **Custom Hook(useModal)**     | Encapsula lógica para el funcionamiento del modal. |
+
+</div>
 
 </details>
 
@@ -626,16 +661,6 @@ npm install
 # Crea un archivo `.env` basado en `.env.example` con la URL de tu API
 npm run dev
 ```
-
----
-
-🔗 Enlaces del Proyecto
-**🚀 App en vivo:**https://usercrud-fullstack.netlify.app
-
-**⚙️ API Server:**https://users-crud-api-gikf.onrender.com/api/users
-
-**📄 Documentación Postman:**https://documenter.getpostman.com/view/48309056/2sB3WtsJn4
-
 ---
 
 ## 🎨 Autora
