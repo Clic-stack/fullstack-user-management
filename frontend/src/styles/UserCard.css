@@ -29,7 +29,7 @@
     margin-bottom: 20px; /* Espacio entre los datos y los botones */
 }
 
-/* Quitamos los márgenes por defecto del nombre y párrafos */
+/* Se quitan los márgenes por defecto del nombre y párrafos */
 .user-info-container h2, 
 .user-info-container p {
     margin: 0; 
