@@ -11,6 +11,7 @@ function UserCard({user, onEdit, onDelete}) {
     // se carga una alternativa que sepamos que SÍ funciona.
     // Usaremos UI Avatars que es muy fiable.
     
+    e.target.onerror = null; // Muy importante: evita que se repita el error
     e.target.src = `https://ui-avatars.com/api/?name=${user.first_name}+${user.last_name}&background=F43F5E&color=fff&bold=true&size=128`;
   };
 
