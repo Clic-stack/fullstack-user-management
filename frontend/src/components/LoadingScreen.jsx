@@ -3,11 +3,11 @@ import "../styles/LoadingScreen.css"
 
 function LoadingScreen() {
     const avatarLinks = [
-      "https://randomuser.me/api/portraits/women/92.jpg",
-      "https://randomuser.me/api/portraits/men/22.jpg",
-      "https://randomuser.me/api/portraits/women/4.jpg",
-      "https://randomuser.me/api/portraits/men/85.jpg",
-      "https://randomuser.me/api/portraits/women/65.jpg"
+      "../assets/avatar_1.png",
+      "../assets/avatar_2.png",
+      "../assets/avatar_3.png",
+      "../assets/avatar_4.png",
+      "../assets/avatar_5.png"
     ];
 
     const carouselRef = useRef(null)
