@@ -3,11 +3,11 @@ import "../styles/LoadingScreen.css"
 
 function LoadingScreen() {
     const avatarLinks = [
-      "https://avatar.iran.liara.run/public/girl?username=blurred1",
-      "https://avatar.iran.liara.run/public/boy?username=blurred2",
-      "https://avatar.iran.liara.run/public/girl?username=blurred3",
-      "https://avatar.iran.liara.run/public/boy?username=blurred4",
-      "https://avatar.iran.liara.run/public/girl?username=blurred5"
+      "https://randomuser.me/api/portraits/women/92.jpg",
+      "https://randomuser.me/api/portraits/men/22.jpg",
+      "https://randomuser.me/api/portraits/women/4.jpg",
+      "https://randomuser.me/api/portraits/men/85.jpg",
+      "https://randomuser.me/api/portraits/women/65.jpg"
     ];
 
     const carouselRef = useRef(null)
@@ -28,7 +28,7 @@ function LoadingScreen() {
           scrollAmount = 0;
         }
         carousel.scrollTo({ left: scrollAmount, behavior: 'smooth' });
-      }, 1600);
+      }, 3000);
 
       return () => clearInterval(interval);
     }, []);
