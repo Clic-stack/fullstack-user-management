@@ -1,14 +1,14 @@
 import { useEffect, useRef } from "react";
 import "../styles/LoadingScreen.css"
 
+import avatar1 from "../assets/avatar_1.png";
+import avatar2 from "../assets/avatar_2.png";
+import avatar3 from "../assets/avatar_3.png";
+import avatar4 from "../assets/avatar_4.png";
+import avatar5 from "../assets/avatar_5.png";
+
 function LoadingScreen() {
-    const avatarLinks = [
-      "../assets/avatar_1.png",
-      "../assets/avatar_2.png",
-      "../assets/avatar_3.png",
-      "../assets/avatar_4.png",
-      "../assets/avatar_5.png"
-    ];
+    const avatarLinks = [avatar1, avatar2, avatar3, avatar4, avatar5];
 
     const carouselRef = useRef(null)
 
@@ -38,7 +38,7 @@ function LoadingScreen() {
         <div className="loading-box">
           <div className="carousel" ref={carouselRef}>
             {avatarLinks.map((link, index) => (
-              <div className="blur-card" key={index}>
+              <div className="blur-card" key={index} style={{ '--i': index }}>
                 <img src={link} alt="Avatar" className="avatar-img" />
                 <div className="blurred-info" />
               </div>
