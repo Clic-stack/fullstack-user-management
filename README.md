@@ -2,7 +2,7 @@
 
 This repository represents the technical evolution of a user management system, transitioning from a local development environment (simulated with **JSON Server**) to a professional decoupled architecture with **real persistence in PostgreSQL**.
 
-<img width="1172" height="962" alt="image" src="https://github.com/user-attachments/assets/c2b9b0d4-3c0b-4650-bfa6-daf49ccb5ce7" />
+<img width="868" height="893" alt="image" src="https://github.com/user-attachments/assets/5364312d-18ed-4389-8d63-8c24fdfe3cfb" />
 
 ---
 </p>
@@ -335,7 +335,7 @@ Clio Salgado – Full-Stack Developer & Data Science for Business Student. This 
 
 Este repositorio representa la evolución técnica de un sistema de gestión de usuarios, transitando de un entorno de desarrollo local (simulado con **JSON Server**) hacia una arquitectura desacoplada profesional con **persistencia real en PostgreSQL**.
 
-<img width="1172" height="962" alt="image" src="https://github.com/user-attachments/assets/3c059985-12f5-4b4c-b37d-b15beba50fa1" />
+<img width="868" height="893" alt="image" src="https://github.com/user-attachments/assets/17c566a7-e057-497e-8459-f787640d36d9" />
 
 ---
 </p>
