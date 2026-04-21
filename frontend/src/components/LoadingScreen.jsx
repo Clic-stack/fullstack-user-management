@@ -1,14 +1,14 @@
 import { useEffect, useRef } from "react";
 import "../styles/LoadingScreen.css"
 
-import avatar1 from "../assets/avatar_1.png";
-import avatar2 from "../assets/avatar_2.png";
-import avatar3 from "../assets/avatar_3.png";
-import avatar4 from "../assets/avatar_4.png";
-import avatar5 from "../assets/avatar_5.png";
-
 function LoadingScreen() {
-    const avatarLinks = [avatar1, avatar2, avatar3, avatar4, avatar5];
+    const avatarLinks = [
+      "/avatar_1.png",
+      "/avatar_2.png",
+      "/avatar_3.png",
+      "/avatar_4.png",
+      "/avatar_5.png"
+    ];
 
     const carouselRef = useRef(null)
 
